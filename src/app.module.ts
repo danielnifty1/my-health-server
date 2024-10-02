@@ -10,7 +10,8 @@ import { UserModule } from './user/user.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { typeOrmConfigAsync } from 'config/config';
-import { MailerModule } from './mail/mailer.module';
+ 
+import { MailModule } from './mail/mail.module';
  
  
 
@@ -25,7 +26,7 @@ import { MailerModule } from './mail/mailer.module';
       }
     ),
     TypeOrmModule.forRootAsync(typeOrmConfigAsync),
-    UserModule,MailerModule],
+    UserModule, MailModule],
 
 
 
