@@ -43,9 +43,7 @@ export class ContactusDTO {
 
   @IsNotEmpty()
   email: string;
-
-  @IsNotEmpty()
-  phone: string;
+ 
 
   @IsNotEmpty()
   message: string;

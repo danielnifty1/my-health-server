@@ -17,8 +17,6 @@ export class ContactUs {
   @Column()
   email: string;
 
-  @Column()
-  phone: string;
 
   @Column()
   message: string;

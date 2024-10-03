@@ -3,7 +3,7 @@ export type ContactusParam = {
 
   email: string;
 
-  phone: string;
+
 
   message: string;
 };
