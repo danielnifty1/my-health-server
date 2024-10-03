@@ -10,7 +10,7 @@ async function bootstrap() {
 
   app.setGlobalPrefix('v1');
 
-  app.enableCors({origin: ["https://vitfit-admin.netlify.app","http://127.0.0.1:5503",'http://localhost:5173',"https://fitserver-else.onrender.com","https://vitfit-v2.netlify.app","https://myhealthleadership.com"]});
+  app.enableCors({origin: ["https://myhealthleadership.netlify.app","http://127.0.0.1:5503",'http://localhost:5173',"https://myhealthleadership.com"]});
 
   await app.listen(8080);
 }
