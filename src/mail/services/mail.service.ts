@@ -23,7 +23,7 @@ export class MailService {
       context: {
         name: ContactUs.name,
         email: ContactUs.email,
-        phone: ContactUs.phone,
+     
         message: ContactUs.message,
       },
     });
@@ -37,7 +37,7 @@ export class MailService {
       context: {
         name: ContactUs.name,
         email: ContactUs.email,
-        phone: ContactUs.phone,
+        
         message: ContactUs.message,
       },
     });
