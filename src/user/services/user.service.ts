@@ -23,10 +23,12 @@ export class UserService {
         const saveContactUs = this.ContactUsRepository.save(createContactUs)
         
         if(!saveContactUs){
+          console.log("sendMail"+saveContactUs)
         return "Failed"
         }
         
         const sendMail=await this.mailService.sendContactusMail({...ContactusParam, id:1})
+        console.log(sendMail)
         return saveContactUs
         } catch (error) {
           return error
