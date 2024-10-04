@@ -17,6 +17,8 @@ export class UserService {
       ) {}
 
     async ContactUs(ContactusParam:ContactusParam){
+      const sendMail=await this.mailService.sendContactusMail({...ContactusParam, id:1})
+        console.log(sendMail)
 
         try {
           const createContactUs= this.ContactUsRepository.create(ContactusParam);
@@ -27,8 +29,8 @@ export class UserService {
         return "Failed"
         }
         
-        const sendMail=await this.mailService.sendContactusMail({...ContactusParam, id:1})
-        console.log(sendMail)
+        // const sendMail=await this.mailService.sendContactusMail({...ContactusParam, id:1})
+        // console.log(sendMail)
         return saveContactUs
         } catch (error) {
           return error
