@@ -7,8 +7,7 @@ export class BookingDTO {
   @IsNotEmpty()
   email: string;
 
-  @IsNumber()
-  phone: string;
+  
 
   instagram: string;
 
