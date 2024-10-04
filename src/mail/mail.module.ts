@@ -30,7 +30,7 @@ import { join } from 'path';
           // },
         },
         defaults: {
-          from:'vitfitcoaching@vitfitcoaching.com' ,
+          from:process.env.Mailer_Username ,
         },
         template: {
           dir: join(__dirname, './templates'),
